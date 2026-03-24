@@ -1326,5 +1326,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // Init
 loadSongs();
 </script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/Unidad-App/sw.js");
+  }
+</script>
+
 </body>
 </html>
